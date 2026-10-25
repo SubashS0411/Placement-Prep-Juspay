@@ -9,13 +9,13 @@ public class SubarraySumEqualsK {
         int current=0;
         HashMap<Integer,Integer> map=new HashMap<>();
         map.put(0,1);
-        for (int i = 0; i < nums.length; i++) {
-            current+=nums[i];
-            int old=current-k;
-            if(map.containsKey(old)){
-                count+=map.get(old);
+        for (int num : nums) {
+            current += num;
+            int old = current - k;
+            if (map.containsKey(old)) {
+                count += map.get(old);
             }
-            map.put(current, map.getOrDefault(current,0)+1);
+            map.put(current, map.getOrDefault(current, 0) + 1);
         }
         return count;
     }
