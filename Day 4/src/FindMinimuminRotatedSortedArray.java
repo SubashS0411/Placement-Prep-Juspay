@@ -16,6 +16,7 @@ public class FindMinimuminRotatedSortedArray {
         }
         return nums[l];
     }
+//    or
     public static int findMin2(int[] nums) {
         int l=0,r= nums.length-1;
         int ans=Integer.MAX_VALUE;
