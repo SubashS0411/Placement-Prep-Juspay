@@ -15,7 +15,6 @@ public class BinaryTreeLevelOrderTraversal {
     }
 //BFS
     public static List<List<Integer>> levelOrder(TreeNode root) {
-
         List<List<Integer>> ans = new ArrayList<>();
         Queue<TreeNode> current = new LinkedList<>();
         if(root==null){
